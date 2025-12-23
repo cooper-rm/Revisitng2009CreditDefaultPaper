@@ -1,0 +1,54 @@
+CREDIT DEFAULT PREDICTION: RE-IMPLEMENTATION & MODERNIZATION
+
+PROJECT MOTIVATION
+This project re-implements the methodology from the seminal 
+2009 paper on credit default prediction using the Default 
+of Credit Card Clients dataset.
+
+The aim of this project is to reproduce the baseline results 
+from the original study and Enhance the analysis with modern 
+machine learning techniques. Beyond reproducing the study, 
+this project includes some exploratory data analysis (EDA), 
+data cleaning, and feature engineering. 
+
+PROJECT STRUCTURE:
+
+├── data/ # Cleaned & engineered datasets
+│ ├── clean.csv
+│ ├── clean_train.csv
+│ ├── clean_test.csv
+│ └── engineered.csv
+│
+├── preprocessing/ # EDA & data preparation
+│ ├── data_exploration.ipynb
+│ ├── data_cleaning.ipynb
+│ ├── feature_engineering.ipynb
+│ └── modeling_baselines.ipynb
+│
+├── models/ # Model implementation notebooks
+│ ├── logistic_regression.ipynb
+│ ├── decision_tree.ipynb
+│ ├── random_forest.ipynb
+│ ├── gradient_boost.ipynb
+│ ├── knn.ipynb
+│ ├── naive_bayesian.ipynb
+│ ├── discriminant_analysis.ipynb
+│
+├── helpers/
+│ └── lift.py # Custom evaluation metrics (e.g., lift chart)
+│
+├── research/ # Reference papers and resources
+│ ├── DefaultCreditCardClients.pdf
+│ ├── MACHINELEARNING_.pdf
+│ └── FEATUREENGINEERING_.pdf
+│
+├── info.txt # Notes and misc. information
+└── README.txt # This file
+
+
+REFERENCES
+Yeh, I.-C., & Lien, C.-H. (2009). "The comparisons of data mining 
+techniques for the predictive accuracy of probability of default 
+of credit card clients." Expert Systems with Applications.
+
+Dataset: UCI Repository — Default of Credit Card Clients

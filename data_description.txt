@@ -1,0 +1,109 @@
+Data Source
+
+Dataset: Default of Credit Card Clients — UCI Machine Learning Repository
+
+Introductory Paper: Yeh & Lien (2009)
+
+Dataset Overview
+This research examines customer default payments in Taiwan and compares the predictive accuracy of the probability of default across six data mining methods.
+
+From a risk management perspective, predicting the probability of default is more valuable than a binary classification (credible vs. not credible). Because the true probability of default is unknown, the study introduces a novel Sorting Smoothing Method to estimate it.
+
+Using the estimated probability of default as the target variable (Y) and the predicted probability from each model as the explanatory variable (X), a simple linear regression model (Y = A + B*X) was fitted. Among the six models tested, artificial neural networks achieved:
+
+Highest coefficient of determination (R²)
+
+Regression intercept (A) close to 0
+
+Regression coefficient (B) close to 1
+
+Dataset Characteristics
+
+Type: Multivariate
+
+Domain: Business / Credit Risk Modeling
+
+Task: Classification
+
+Feature Types: Integer, Real-valued
+
+Instances: 30,000
+
+Features: 23
+
+Variable Descriptions
+
+Target Variable
+
+default.payment.next.month — Default payment (1 = Yes, 0 = No)
+
+Explanatory Variables
+
+X1: Amount of given credit (NT$) — Includes both individual and family (supplementary) credit.
+
+X2: Gender (1 = male; 2 = female)
+
+X3: Education (1 = graduate school; 2 = university; 3 = high school; 4 = others)
+
+X4: Marital status (1 = married; 2 = single; 3 = others)
+
+X5: Age (years)
+
+Payment History Variables (X6 – X11)
+
+Past monthly repayment status from April to September 2005:
+
+X6 = September 2005
+
+X7 = August 2005
+
+X8 = July 2005
+
+X9 = June 2005
+
+X10 = May 2005
+
+X11 = April 2005
+
+Scale:
+
+-2 = No consumption
+
+-1 = Paid in full
+
+0 = Revolving credit use
+
+1–9 = Payment delay for N months (9 = nine months or more)
+
+Bill Statement Amounts (X12 – X17)
+
+Bill amounts (NT$) for the six months prior to September 2005:
+
+X12 = September 2005
+
+X13 = August 2005
+
+X14 = July 2005
+
+X15 = June 2005
+
+X16 = May 2005
+
+X17 = April 2005
+
+Previous Payment Amounts (X18 – X23)
+
+Amount paid (NT$) for the six months prior to September 2005:
+
+X18 = September 2005
+
+X19 = August 2005
+
+X20 = July 2005
+
+X21 = June 2005
+
+X22 = May 2005
+
+X23 = April 2005
+
